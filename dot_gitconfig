@@ -1,0 +1,30 @@
+[user]
+	email = javisanroman@gmail.com
+	name = jsanroman
+[credential]
+	helper = store
+
+[alias]
+    co = checkout
+    ci = commit -m
+    st = status
+    br = branch
+    cnm = commit -a --allow-empty-message -m ''
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    amend = commit --amend -s
+    commit = commit -s
+
+    develop = !git checkout develop && git pull origin develop
+    master = !git checkout master && git pull origin 
+
+    branches = branch -a
+    tags = tag
+    stashes = stash list
+
+    unstage = reset -q HEAD --
+    discard = checkout --
+    uncommit = reset --mixed HEAD~
+
+[push]
+    default = current
+

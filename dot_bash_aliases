@@ -1,0 +1,26 @@
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+#alias go='git checkout '
+
+alias qm='docker exec -it qm-web'
+alias qmc='docker exec -it qm-web cap'
+alias qmdc='docker-compose -f ./docker/docker-compose.yml'
+alias qmlog='docker-compose -f ./docker/docker-compose.yml logs --tail 100 -f qm-web'
+
+alias mg='docker exec -it mg-web'
+alias mgc='docker exec -it mg-web cap'
+alias mglog='docker-compose logs --tail 100 -f mg-web'
+
+alias eb='docker exec -it eb-web'
+alias eblog='docker-compose logs --tail 100 -f eb-web'
+
+alias mi='docker exec -it minimo-web'
+alias milog='docker-compose logs --tail 100 -f minimo-web'
+
+alias goqm='cd /home/javi/Proyectos/quecochemecompro'
+alias gomg='cd /home/javi/Proyectos/mapache'
+alias goeb='cd /home/javi/Proyectos/expenbox'
+alias gomi='cd /home/javi/Proyectos/minimo'
